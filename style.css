@@ -1,0 +1,497 @@
+@font-face {
+    font-family: font1;
+    src: url(object-sans-heavy.woff2);
+}
+@font-face {
+    font-family: font2;
+    src: url(UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: font2;
+}
+.container{
+    height: 100%;
+    width: 100%;
+}
+.header{
+    height: 13%;
+    width: 100%;
+}
+nav{
+    height: 100%;
+    width: 100%;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+.logo{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    cursor: pointer;
+}
+.logo .img{
+    height: 50%;
+    width: 30%;
+    background-image: url(logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+}
+.part1,.part2{
+    display: flex;
+    gap: 25px;
+    font-size: 16px;
+    
+}
+.part1 > a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        color: blue;
+    }
+}
+.part2 > a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        color: blue;
+    }
+}
+.bg_img{
+    height: 55%;
+    width: 100%;
+    background-image: url(bg_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg_img{
+display: flex;
+}
+
+.overlay_content{
+    height: 50%;
+    width: 35%;
+    margin: 2% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    color:black;
+}
+.overlay_content > h1{
+    font-family: font1;
+    font-weight: 800;
+    margin: 30px 10px;  
+    text-align: center;
+    font-size: 50px;
+}
+.inputbox{
+    height: 45px;
+    width: 380px;
+    padding: 0 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.inputbox > input{
+    height: 45px;
+    width: 390px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;    
+}
+.inputbox > i{
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 5px;
+    border: none;
+}
+.inputbox > i:hover{
+    color: blue;
+}
+.container_2{
+    height:50%;
+    width: 100%;
+    display: flex;
+}
+.container_2 .left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left .content_left > h4{
+    font-size: 25px;
+    font-weight: 800;
+}
+.left .content_left > p{
+    line-height: 35px;
+    font-size: 15px;
+}
+.left .content_left > button{
+    margin-top: 2%;
+    cursor: pointer;
+    padding: 15px 35px;
+    border-radius: 10px;
+    border:  2px solid blue;
+    color: blue;
+    font-size: 15px;
+    font-weight: 600;
+}
+.left .content_left > button:hover{
+    background-color: blue;
+    color: white;
+}
+.container_2 .right {
+    height: 100%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right .img{
+    height: 65%;
+    width: 55%;
+    border-radius: 10px;
+    background-image: url(right\ img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: 32px 27px 19px -16px rgba(0,0,0,0.59);
+-moz-box-shadow: 32px 27px 19px -16px rgba(0,0,0,0.59);
+box-shadow: 32px 27px 19px -16px rgba(0,0,0,0.59);
+}
+.right .img::before{
+    content: "";
+    bottom: 22%;
+    height: 63%;
+    width: 53%;
+    border-radius: 10px;
+    position: absolute;
+    background-image: url(before\ img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container_3{
+    height: 80%;
+    width: 100%;
+    padding: 3rem 3rem;
+}
+.container_3 .img_box{
+    height: 100%;
+    width: 100%;
+    padding: 1px;
+    border-radius: 20px;
+    background-image: url(container_img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img_box .content_box{
+    height: 70%;
+    width: 50%;
+    margin: 5%;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #137065;
+}  
+.content_box .left,.right {
+    height: 100%;
+    width: 50%;
+}
+.content_box .left{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.content_box .left > h1{
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+.content_box .left > h2{
+    font-size: 18px;
+    color: #9ff27c;
+    font-weight: 900;
+}
+.content_box .left > p{
+    margin-top: 10%;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    line-height: 18px;
+}
+.content_box .left > button{
+    width: 70%;
+    cursor: pointer;
+    margin-top: 10%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    color: blue;
+    font-size: 15px;
+    font-weight: 600;
+}
+.content_box .left > button:hover{
+    background-color: blue;
+    color: white;
+}
+.content_box .right{
+    background-image: url(content_right_img.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.container_4{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    padding: 0rem 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f2f2f2;
+}
+.container_4 .box1,.box2,.box3{
+    height: 90%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+}
+.container_4 .box1 > .img_1{
+    height: 55%;
+    width: 50%;
+    margin-left: 25% ;
+    border-radius: 50%;
+    background-image: url(https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/04/homepage-spot-agent-lg-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container_4 .box1 > h1{
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+}
+.container_4 .box1 > P{
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+.container_4 .box1 > button{
+    cursor: pointer;
+    align-self: center;
+    width: 50%;
+    padding: 10px 20px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    color: blue;
+    font-size: 15px;
+    font-weight: 600;
+}
+.container_4 .box1 > button:hover{
+    background-color: blue;
+    color: white;
+}
+.container_4 .box2 > .img_2{
+    height: 55%;
+    width: 50%;
+    margin-left: 25% ;
+    border-radius: 50%;
+    background-image: url(https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/04/homepage-spot-sell-lg-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container_4 .box2 > h1{
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+}
+.container_4 .box2 > P{
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+.container_4 .box2 > button{
+    align-self: center;
+    cursor: pointer;
+    width: 60%;
+    padding: 10px 20px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    color: blue;
+    font-size: 15px;
+    font-weight: 600;
+}
+.container_4 .box2 > button:hover{
+    background-color: blue;
+    color: white;
+}
+.container_4 .box3 > .img_3{
+    height: 55%;
+    width: 50%;
+    margin-left: 25% ;
+    border-radius: 50%;
+    background-image: url(https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/04/homepage-spot-rent-lg-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container_4 .box3 > h1{
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+}
+.container_4 .box3 > P{
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+.container_4 .box3 > button{
+    align-self: center;
+    cursor: pointer;
+    width: 50%;
+    padding: 10px 20px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    color: blue;
+    font-size: 15px;
+    font-weight: 600;
+}
+.container_4 .box3 > button:hover{
+    background-color: blue;
+    color: white;
+}
+.container_5{
+    height: 70%;
+    width: 100%;
+    padding: 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+.container_5 .top{
+    height: 50%;
+    width: 100%;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+.dropdown_menu{
+    margin-top: 2%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.container_5 button{
+    padding: 10px 20px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    color:blue;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: white;
+}
+.container_5 button:hover{
+    background-color: blue;
+    color: white;
+}
+.content{
+    display: none;
+    background-color: whitesmoke;
+    position: absolute;
+    min-width: 150px;
+    box-shadow: 2px 5px 5px rgb(157, 156, 156);
+}
+.dropdown_1:hover .content{
+    display: block;
+}
+.dropdown_2:hover .content{
+    display: block;
+}
+.dropdown_3:hover .content{
+    display: block;
+}
+.dropdown_4:hover .content{
+    display: block;
+}
+.content > a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+}
+.content > a:hover{
+    background-color: blue;
+    color: white;
+}
+.bottom{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 7px;
+}
+.bottom > p{
+    font-size: 14px;
+}
+.bottom > a{
+    text-decoration: none;
+    color: blue;
+    font-size: 15px;
+    font-weight: 600;
+}
+.bottom .footer_links{
+    height: 40%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    align-self: center;
+}
+.bottom .footer_links > P{
+    font-size: 15px;
+    font-weight: 600;
+}
+.bottom .footer_links > i{
+    color: blue;
+    font-size: 20px;
+    cursor: pointer;
+}
+.bottom .footer_links > i:hover{
+    color: black;
+}
